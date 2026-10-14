@@ -1,0 +1,17 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.3rem 1rem;
+    align-items: center;
+}
+h1{
+    font-size: 30px;
+}
+ul{
+    display: flex;
+    gap: 1rem;
+}
+li{
+    color: black;
+}

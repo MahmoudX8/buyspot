@@ -1,0 +1,17 @@
+.homepage{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    max-width: 300px;
+    text-align: center;
+    justify-self: center;
+    word-spacing: 5px;
+    font-size: 30px;
+}
+.button{
+    justify-self: center;
+}
