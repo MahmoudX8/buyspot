@@ -1,14 +1,38 @@
 .btn{
-    background-color: rgb(20, 62, 20);
     padding: 4px;
+    min-width: 30px;
     border-radius: 6px;
-    color: white;
     cursor: pointer;
-    border: solid 2px rgb(20, 62, 20);
+    border: 2px solid;
     transition: all ease-in-out .5s;
-    margin-bottom: 2rem;
+    margin: 1rem 0;
+    color: white;
 }
-.btn:hover{
-    background-color: white;
-    color: rgb(20, 62, 20);
+.primary{
+    background-color: rgb(37, 114, 37);
+    border-color: rgb(37, 114, 37);
+}
+.secondry{
+    background-color: rgb(67, 67, 67);
+    border-color: rgb(67, 67, 67);
+}
+.danger{
+    background-color: rgb(114, 37, 37);
+    border-color: rgb(114, 37, 37);
+}
+.btn:disabled{
+    opacity: .5;
+    cursor: not-allowed;
+}
+.primary:hover:not(:disabled){ 
+    background: transparent;
+    color: rgb(37, 114, 37); 
+}
+.secondary:hover:not(:disabled){ 
+    background: transparent;
+    color: rgb(67, 67, 67); 
+}
+.danger:hover:not(:disabled){ 
+    background: transparent;
+    color: rgb(114, 37, 37); 
 }

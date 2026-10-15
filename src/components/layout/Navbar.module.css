@@ -1,9 +1,15 @@
+.uppernav{
+    background-color: rgb(37, 114, 37);
+    color: white;
+    text-align: center;
+    font-size: small;
+}
 .nav{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding: 0.3rem 1rem;
     align-items: center;
+
 }
 h1{
     font-size: 30px;
@@ -13,5 +19,35 @@ ul{
     gap: 1rem;
 }
 li{
+    cursor: pointer;
+}
+.textlogo{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.searchbar{
+    background-color: rgb(224, 224, 217);
+    display: flex;
+}
+.uls{
+    /* background-color: purple; */
+    color: rgb(37, 114, 37);
+}
+.lowernav{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+.categories{
     color: black;
+}
+.linkarea{
+    color: rgb(37, 114, 37);
+    text-decoration: underline;
+}
+hr{
+    color: rgb(177, 177, 177);
 }

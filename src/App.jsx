@@ -6,12 +6,15 @@ import './App.css'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
 import { Home } from './pages/Home'
 import { RootLayout } from './components/layout/RootLayout'
+import { Products } from './pages/Products'
+import { Profile } from './pages/Profile'
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
     <Route path='/' element={<RootLayout/>}>
       <Route index element={<Home />}/>
-
+      <Route path='/products' element={<Products />}/>
+      <Route path='/profile' element={<Profile />}/>
     </Route>
   ))
 

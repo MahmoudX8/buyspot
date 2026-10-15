@@ -1,10 +1,5 @@
 .input{
-    border: 2px rgb(199, 199, 199) solid;
-
-    justify-self: center;
     padding: 0 12px;
-    border-radius: 5px;
-    
 }
 .input:focus,
 .input:focus-visible{

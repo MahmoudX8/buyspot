@@ -1,0 +1,10 @@
+.products{
+    background: #e6e3e3;
+    padding: 3rem 1rem;
+}
+.productssec{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-items: center;
+}

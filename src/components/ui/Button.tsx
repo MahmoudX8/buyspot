@@ -2,12 +2,20 @@ import React from 'react'
 import styles from './Button.module.css'
 interface ButtonProps{
     text: string,
+    variant?: "primary" | "secondry" | "danger",
+    disabled?: boolean,
+    onClick?: ()=>void,
 };
-export const Button = ({text}: ButtonProps) => {
+export const Button = ({text, onClick, variant = "primary", disabled = false}: ButtonProps) => {
   return (
     <>
         <div>
-            <button className={`${styles.btn}`}>{text}</button>
+            <button
+            onClick={onClick}
+            className={`${styles.btn} ${styles[variant]}`} 
+            disabled = {disabled}>
+                {text}
+            </button>
         </div>
     </>
   )
