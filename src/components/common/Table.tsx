@@ -10,7 +10,7 @@ export const Table = ({ columns, data, striped = false }: tableProps) => {
   return (
     <>
       <div className={styles.tablediv}>
-        <table className={styles.table}>
+        {/* <table className={styles.table}>
           <thead>
             <tr>
               {columns.map((c, i) => (
@@ -27,7 +27,7 @@ export const Table = ({ columns, data, striped = false }: tableProps) => {
               </tr>
             ))}
           </tbody>
-        </table>
+        </table> */}
       </div>
     </>
   );

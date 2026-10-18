@@ -1,26 +1,26 @@
-import React from 'react'
-import {Button} from '../components/ui/Button'
-import {Input} from '../components/ui/Input'
-import styles from './Home.module.css'
-import { useNavigate } from 'react-router-dom'
+import React from "react";
+import { Button } from "../components/common/Button";
+import styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
+import { Products } from "./Products";
 export const Home = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   return (
     <>
-        <div className={`${styles.homepage}`}>
-            <div>
-                <p className={`${styles.subtitles}`}>SMALL SHOP. GOOD FINDS.</p>
-                <h1 className={`${styles.title}`}>Discover quality products at prices that make sense, delivered to your door.</h1>
-                <div style={{display:'flex', gap: 12}}>
-                    <Button text="Find your good thing" variant="primary" onClick={()=>{navigate('/products')}}/>
-                    <Button text="Your Profile" variant="danger" onClick={()=>{navigate('/profile')}}/>
-
-                </div>
-                <p className={`${styles.greywords}`}>Made for living with. Not just looking at.</p>
-            </div>
-            <div className={`${styles.btnsection}`}>
-            </div>
-        </div>
+      <div className={`${styles.homepage}`}>
+        <div>
+          <h2 className={`${styles.title}`}>
+            Explore Our Shop.
+          </h2>
+          <p className={`${styles.subtitles}`}>From skincare to makeup, our platform features a wide range of products that cater to all your beauty needs. We strive to provide our customers with a luxury shopping experience, from browsing through our carefully selected products to receiving them in our signature packaging. Shop with us for the ultimate in beauty luxury.</p>
+          </div>
+          <div style={{ display: "flex", gap: 12 }}>
+          </div>
+          <div>
+            <Products/>
+          </div>
+        <div className={`${styles.btnsection}`}></div>
+      </div>
     </>
   )
-}
+};

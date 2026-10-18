@@ -1,6 +1,7 @@
 .homepage{
     align-items: center;
     display: flex;
+    flex-direction: column;
     padding: 1rem 3rem;
 }
 .title{
