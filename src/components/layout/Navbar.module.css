@@ -1,5 +1,5 @@
 .uppernav{
-    background-color: rgb(37, 114, 37);
+    background-color: var(--primary);
     color: white;
     text-align: center;
     font-size: small;
@@ -9,7 +9,9 @@
     justify-content: space-between;
     padding: 0.3rem 1rem;
     align-items: center;
-
+    width: 95%;
+    justify-self: center;
+    border-radius: 12px;
 }
 h1{
     font-size: 30px;
@@ -19,20 +21,23 @@ ul{
     gap: 1rem;
 }
 li{
+    font-size: small;
     cursor: pointer;
+    background-color: var(--secondrybg);
+    padding: 1rem;
+    border-radius: 12px;
 }
 .textlogo{
     height: 60px;
     display: flex;
     align-items: center;
+    background-color:var(--secondrybg);
+    padding: 1rem;
+    border-radius: 12px;
 }
 .searchbar{
-    background-color: rgb(224, 224, 217);
+    background-color:var(--secondrybg);
     display: flex;
-}
-.uls{
-    /* background-color: purple; */
-    color: rgb(37, 114, 37);
 }
 .lowernav{
     display: flex;

@@ -21,7 +21,7 @@ export const Products = () => {
   const [input, setInput] = useState("");
   const [search, setSearch] = useState("");
   const [searchParams, setSearchParams] = useSearchParams();
-  const numOfProdsPerPage = 6; 
+  const numOfProdsPerPage = 8; 
   const currPage = Number(searchParams.get('page')) || 1;
   const goTo = (p) => (e) => {e.preventDefault(); setSearchParams({ page: p })};
   const goBack = (e) => {e.preventDefault(); if(currPage > 1) setSearchParams({page: currPage - 1})};
@@ -53,7 +53,6 @@ export const Products = () => {
     <>
       <div className={`${styles.products}`}>
         <section>
-          <h1>Products</h1>
           <form onSubmit={onSearch}>
             <Field orientation="horizontal">
               <Input type="search" placeholder="Search..." value={input} onChange={(e)=>setInput(e.target.value)}/>
@@ -64,18 +63,17 @@ export const Products = () => {
         <section className={`${styles.productssec}`}>
           {postData.data.products.map((p)=>(
             <div key={p.id} onClick={()=>{navigate(`/product/${p.id}`)}}>
-            <Card>
+            <Card className={"h-full w-full text-center cursor-pointer"}>
                <img
                 src={p.images[0]}
                 alt="Event cover"
-                className="relative z-20 aspect-video w-full object-cover brightness-60  dark:brightness-40"/>
+                className="aspect-square w-full object-cover"/>
               <CardHeader>
                 <CardTitle>{p.title}</CardTitle>
-                <CardDescription>{p.description.slice(0,50)}...</CardDescription>
+                <CardDescription>{p.brand}</CardDescription>
               </CardHeader>
               <CardContent>
-              <p>{p.price}$</p>
-              <p>{p.rating}</p>
+              <p>${p.price}</p>
             </CardContent>
             </Card>
           </div>

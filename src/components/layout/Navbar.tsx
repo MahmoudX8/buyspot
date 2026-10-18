@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { Input } from "@/components/ui/input"
 import { Field } from "@/components/ui/field"
 import { Button } from "@/components/ui/button"
+import { Search } from "lucide-react";
 
 export const Navbar = () => {
   const navigate = useNavigate();
@@ -25,26 +26,28 @@ export const Navbar = () => {
         </div>
         <div className={`${styles.uls}`}>
           <ul>
-            <li onClick={() => {}}>cart</li>
-            <li onClick={() => {}}>about</li>
-            <li
-              onClick={() => {
-                navigate("/profile");
-              }}
-            >
-              profile
-            </li>
+            <li onClick={() => {}}>SHOP</li>
+            <li onClick={() => {}}>COLLECTIONS</li>
+            <li>CONTACT</li>
+            <li>ABOUT</li>
           </ul>
         </div>
         <div>
             <Field orientation="horizontal">
-              <Input type="search" placeholder = "Find what you want" />
-            </Field>
+            <div className="relative w-full">
+              <Input
+                type="search"
+                placeholder="SEARCH"
+                className="h-12 w-full rounded-xl border-gray-200 bg-white pr-12 pl-4 text-sm uppercase shadow-sm placeholder:text-gray-500 focus-visible:ring-primary/30 [&::-webkit-search-cancel-button]:hidden"
+              />
+              <Search className="pointer-events-none absolute top-1/2 right-4 size-5 -translate-y-1/2 text-gray-700" />
+            </div>
+          </Field>
         </div>
         {/* <div className={`${styles.searchbar}`}>
         </div> */}
         <div>
-          <Button>View Cart</Button>
+          <Button className="w-full px-8 py-6 cursor-pointer">View Cart</Button>
         </div>
 
       </div>

@@ -8,7 +8,7 @@ export const Home = () => {
   return (
     <>
       <div className={`${styles.homepage}`}>
-        <div>
+        <div className={styles.homecomp1}>
           <h2 className={`${styles.title}`}>
             Explore Our Shop.
           </h2>
@@ -16,7 +16,7 @@ export const Home = () => {
           </div>
           <div style={{ display: "flex", gap: 12 }}>
           </div>
-          <div>
+          <div className={styles.homecomp2}>
             <Products/>
           </div>
         <div className={`${styles.btnsection}`}></div>

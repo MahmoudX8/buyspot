@@ -1,0 +1,36 @@
+.productpage{
+    background-color: var(--secondrybg);
+    border-radius: 12px;
+    width: 95%;
+    justify-self: center;
+    padding: 1rem;
+    text-align: center;
+    font-family: var(--font);
+    margin: 1rem 0;
+}
+.productcomponents{
+    text-align: left;
+}
+.productcomponents h2{
+    font-weight: var(--bold);
+    font-size: 3rem;
+}
+.productcomponents p{
+    color: grey;
+    max-width: 600px;
+    margin: .5rem 0;
+}
+.productreviewssec{
+    text-align: left;
+    margin-top: 2rem;
+}
+.reviewscontainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 1rem;
+}
+.reviewscontainer div{
+    background-color: var(--bg);
+    padding: 1rem;
+    border-radius: 12px;text-align: left;
+}
